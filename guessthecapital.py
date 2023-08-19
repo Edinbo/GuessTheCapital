@@ -1,5 +1,4 @@
 import random
-import math
 
 country_capitals = {
     "Afghanistan": "Kabul",
