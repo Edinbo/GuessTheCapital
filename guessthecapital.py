@@ -200,7 +200,6 @@ country_capitals = {
     "Zimbabwe": "Harare"
 }
 
-
 guess = 0
 correct_guess = 0
 false_guess = 0
@@ -221,10 +220,10 @@ if correct_guess > false_guess:
     if correct_guess == len(guess_count):
         print("%100 of the answers were correct")
     else:
-        print(f"%{round((false_guess / correct_guess) * 100)} of the answers is correct")
+        print(f"%{round((correct_guess / len(guess_count)) * 100)} of the answers is correct")
 else:
     print(f"It seems like you need to work on your geography lessons more  \n{correct_guess} Correct answers \n{false_guess} Wrong answers")
     if correct_guess == false_guess:
         print("%50 of the answers is correct")
     else:
-        print(f"%{round((correct_guess / false_guess) * 100)} of the answers is correct")
+        print(f"%{round((correct_guess / len(guess_count)) * 100)} of the answers is correct")
