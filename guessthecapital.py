@@ -209,7 +209,7 @@ guess_count = range(10)
 for i in guess_count:
     random_country, correct_capital = random.choice(list(country_capitals.items()))
     guess = input(f"What is the Capital of {random_country} : ")
-    if guess == correct_capital:
+    if guess.lower() == str(correct_capital).lower():
         print("Correct!!")
         correct_guess += 1
     else:
